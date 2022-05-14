@@ -28,7 +28,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
             $_SESSION['id']=$usuario['id'];
             $_SESSION['nome']=$usuario['nome'];
 
-            header("Location:painel.php");
+            header("Location:listadefilmes.html");
 
         }else{
             echo"Falha ao logar! E-mail ou senha incorretos";
@@ -49,15 +49,21 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
      <form action="" method="POST">
     <p>
         <label>E-mail</label>
-        <input type="text" name="email">
+        <input type="text" name="email">(login: jera@gmail.com)
     </p>
     <p>
         <label>Senha</label>
-        <input type="password" name="senha">
+        <input type="password" name="senha">(senha:jera123)
     </p>
     <p>
         <button type="submit">Entrar</button>
+        <a href="untitled-1.html"></a>
         </p>
+        <br> 
+    <div>
+         <a href="criarconta.php">Criar conta</a>
+    </div>
+        
     </form>
 </body>
 </html>
